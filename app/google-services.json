@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "313048909751",
+    "firebase_url": "https://vino-quiz-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "vino-quiz",
+    "storage_bucket": "vino-quiz.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:313048909751:android:baa8c0b352c7392bc04a32",
+        "android_client_info": {
+          "package_name": "com.uvarara.quiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "313048909751-3e7joo9g6l75t2fjpvltep62h3atjlio.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiTEl8k_qp4JiwOstqR8lyphWGueMCXLw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "313048909751-3e7joo9g6l75t2fjpvltep62h3atjlio.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

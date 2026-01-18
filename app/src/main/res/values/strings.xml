@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="version_fra">0.1.a</string>
+    <string name="app_name">Chi vuol essere Sommelier?</string>
+    <string name="completed">Congratulazioni! \n Livello completato!</string>
+    <string name="not_completed">Oops! \n Livello non completato. Gioca ancora! </string>
+    <string name="setting_heading">Impostazioni </string>
+    <string name="select_level">Seleziona Livello</string>
+    <string name="select_category">Seleziona Categoria</string>
+    <string name="select_subcategory">Seleziona Sottocategoria</string>
+    <string name="more_app">Altre App</string>
+    <string name="sound">Suono</string>
+    <string name="share_app">Condividi App</string>
+    <string name="vibration">Vibrazione</string>
+    <string name="rateapp">Valutazione    </string>
+    <string name="bg_music">Musica Sottofondo</string>
+    <string name="coin_dialog_title">Monete insufficienti ! </string>
+    <string name="share_via">Condividi con... </string>
+    <string name="share_subject">Mi piace questo Quiz</string>
+    <string name="next_play">Gioca Prossimo Livello</string>
+    <string name="play_again">Gioca ancora</string>
+    <string name="quite">Home</string>
+    <string name="achievement">Risultato</string>
+    <string name="review_answer">Rivedi Risposte</string>
+    <string name="share_score">Condividi punteggio</string>
+    <string name="action_settings">Impostazioni</string>
+    <string name="play_next">Gioca Ancora</string>
+    <string name="step3">Confronta il tuo punteggio con quello di altri utenti\n(da implementare)</string>
+    <string name="step4">Risultati e livello\n(da implementare)</string>
+    <string name="lets_play">Giochiamo</string>
+    <string name="achievements_exception">Si è verificato un problema di comunicazione con i risultati.</string>
+    <string name="players_exception">Si è verificato un problema di comunicazione con i giocatori.</string>
+    <string name="status_exception_error">%1$s (status %2$d). %3$s.</string>
+    <string name="coin_message">Non hai abbastanza monete. Hai bisogno di almeno 4 monete per utilizzare questo aiuto.</string>
+    <string name="coin_message_sub">Guarda un breve video e ottieni monete gratuite</string>
+    <string name="skip_btn_message">SALTA. NON HO BISOGNO DI MONETE</string>
+    <string name="youAreNotUpdatedTitle">Aggiornamento disponibile</string>
+    <string name="youAreNotUpdatedMessage">È disponibile una nuova versione dell\'app. Si prega di aggiornare alla versione più recente.</string>
+    <string name="youAreNotUpdatedMessage1">\s ora</string>
+    <string name="update">Aggiorna</string>
+    <string name="no_internet">Nessuna connessione Internet</string>
+    <string name="bookmark_list_title">Elenco Segnalibri</string>
+
+
+    <!-- AD Mob IDs-->
+    <string name="admob_Rewarded_Video_Ads">ca-app-pub-0073108107809985/3847442754</string>
+    <string name="admob_interstitial_id">ca-app-pub-0073108107809985/8746173920</string>
+    <string name="admob_interstitial_rew">ca-app-pub-0073108107809985/4752168846</string>
+    <string name="admob_banner_id">ca-app-pub-0073108107809985/3715526911</string>
+    <string name="admob_app_id">ca-app-pub-0073108107809985~1896012932</string>
+ <!--   <string name="interstitial_ad_sample">Interstitial Ad Sample</string> -->
+    <string name="start_level">Level 1</string>
+    <string name="next_level">Next Level</string>
+    <string name="level_text">Level %1$d</string>
+    <!-- -
+    This is an ad unit ID for an interstitial test ad. Replace with your own interstitial ad unit id.
+    For more information, see https://support.google.com/admob/answer/3052638
+<!- -->
+    <string name="interstitial_ad_unit_id">YOUR_INTERSTITIAL_AD_UNIT_ID</string>
+
+</resources>

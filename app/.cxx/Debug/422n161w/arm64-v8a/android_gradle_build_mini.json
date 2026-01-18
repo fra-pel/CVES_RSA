@@ -1,0 +1,27 @@
+{
+  "buildFiles": [
+    "C:\\AndroidApp\\CVES_RSA\\app\\src\\main\\cpp\\CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "D:\\Android\\cmake\\3.22.1\\bin\\ninja.exe",
+      "-C",
+      "C:\\AndroidApp\\CVES_RSA\\app\\.cxx\\Debug\\422n161w\\arm64-v8a",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "D:\\Android\\cmake\\3.22.1\\bin\\ninja.exe",
+    "-C",
+    "C:\\AndroidApp\\CVES_RSA\\app\\.cxx\\Debug\\422n161w\\arm64-v8a",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "ksec::@6890427a1f51a3e7e1df": {
+      "artifactName": "ksec",
+      "abi": "arm64-v8a",
+      "output": "C:\\AndroidApp\\CVES_RSA\\app\\build\\intermediates\\cxx\\Debug\\422n161w\\obj\\arm64-v8a\\libksec.so",
+      "runtimeFiles": []
+    }
+  }
+}

@@ -1,0 +1,98 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    // Usa un SDK stabile a meno che tu abbia installato il preview 36
+    compileSdk 36
+
+    defaultConfig {
+        applicationId "com.uvarara.quiz"
+        minSdk 23
+        targetSdk 34
+
+        versionCode 10
+        versionName "0.0.1"
+
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        vectorDrawables {
+            useSupportLibrary = true
+        }
+        externalNativeBuild {
+            cmake {
+                cppFlags ""
+            }
+        }
+        ndk {
+            abiFilters "armeabi-v7a", "arm64-v8a" // o altri se vuoi
+        }
+    }
+    externalNativeBuild {
+        cmake {
+            path "src/main/cpp/CMakeLists.txt" // percorso corretto
+        }
+    }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+    kotlinOptions {
+        jvmTarget = "17"
+    }
+    buildFeatures {
+        viewBinding = true
+    }
+    namespace = 'com.uvarara.quiz'
+    buildTypes {
+        release {
+            minifyEnabled = 'true'          // abilita shrink + offuscamento
+            shrinkResources = 'true'        // rimuove risorse inutilizzate
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'),
+                    'proguard-rules.pro'
+        }
+    }
+    ndkVersion '28.2.13676358'
+
+}
+
+/**
+ * Rinominare l'APK con l'Android Components API:
+ * leggi la versionName dall'output, non da variant.
+ */
+androidComponents {
+    onVariants(selector().all()) { variant ->
+        variant.outputs.forEach { output ->
+            def vName = output.versionName.orElse("0.0.1").get()
+            output.outputFileName.set(
+                    "Chi_vuol_essere_Sommelier-${vName}-${variant.name}.apk"
+            )
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'androidx.appcompat:appcompat:1.7.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.2.1'
+    implementation 'com.google.android.material:material:1.12.0'
+
+    implementation 'com.google.android.gms:play-services-ads:24.5.0'
+    implementation 'com.google.android.gms:play-services-auth:21.4.0'
+    implementation "com.google.android.gms:play-services-games:23.2.0"
+
+    implementation 'org.jsoup:jsoup:1.21.1'
+    implementation 'net.zetetic:sqlcipher-android:4.10.0@aar'
+    implementation 'androidx.sqlite:sqlite-ktx:2.5.2'
+    implementation "androidx.multidex:multidex:2.0.1"
+    implementation "androidx.recyclerview:recyclerview:1.4.0"
+
+    testImplementation 'junit:junit:4.13.2'
+    // Corretto a una versione esistente
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.7.0'
+}
+tasks.withType(JavaCompile).configureEach {
+    options.compilerArgs += ["-Xlint:deprecation", "-Xlint:unchecked"]
+}
